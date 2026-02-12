@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rishyendra Kankatala | Cryptography & Backend Engineer</title>
+<title>Rishyendra Kankatala | Applied Cryptography Engineer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -33,24 +33,43 @@ body {
     padding: 40px 20px;
 }
 
-header {
-    text-align: center;
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     padding: 80px 20px 40px 20px;
+    flex-wrap: wrap;
 }
 
-header h1 {
-    font-size: 2.8rem;
+.hero img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.6rem;
     font-weight: 700;
     color: var(--primary);
 }
 
-header p {
+.hero-text p {
     margin-top: 10px;
-    font-size: 1.1rem;
     color: var(--muted);
+    font-size: 1.1rem;
 }
 
-.hero-badges {
+.badges {
     margin-top: 15px;
 }
 
@@ -61,7 +80,7 @@ header p {
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
-    margin: 5px;
+    margin: 5px 5px 0 0;
 }
 
 nav {
@@ -70,7 +89,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    margin: 0 15px;
+    margin-right: 20px;
     color: var(--accent);
     font-weight: 500;
 }
@@ -109,15 +128,10 @@ section {
     color: var(--muted);
 }
 
-.button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    background: var(--accent);
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.9rem;
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
 }
 
 </style>
@@ -125,124 +139,81 @@ section {
 
 <body>
 
-<header>
-    <h1>Rishyendra Kankatala</h1>
-    <p>Applied Cryptography | Secure Protocol Design | Backend Systems Engineer</p>
+<div class="hero">
 
-    <div class="hero-badges">
-        <span class="badge">M.Tech – NIT Calicut</span>
-        <span class="badge">IEEE GCON 2025</span>
-        <span class="badge">SCOPUS Publication (CRC Press)</span>
-        <span class="badge">GATE AIR 3067 (~96%)</span>
+    <img src="profile.jpg" alt="Rishyendra Kankatala">
+
+    <div class="hero-text">
+        <h1>Rishyendra Kankatala</h1>
+        <p>Applied Cryptography • Secure Protocol Design • Backend Systems Engineering</p>
+
+        <div class="badges">
+            <span class="badge">M.Tech – NIT Calicut</span>
+            <span class="badge">IEEE GCON 2025</span>
+            <span class="badge">SCOPUS Publication (CRC Press)</span>
+            <span class="badge">GATE AIR 3067 (~96%)</span>
+        </div>
+
+        <nav>
+            <a href="mailto:rishyendrakankatala@gmail.com">Email</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </nav>
     </div>
 
-    <nav>
-        <a href="mailto:rishyendrakankatala@gmail.com">Email</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-    </nav>
-</header>
+</div>
 
 <div class="container">
 
 <section>
     <div class="section-title">Professional Summary</div>
     <div class="card">
-        Software Engineer with 4+ years of experience in secure backend systems and applied cryptography.
+        Software Engineer with 4+ years of experience in applied cryptography and secure backend systems.
         Specialized in Elliptic Curve Cryptography (ECC), entropy analysis, lightweight encryption protocols,
-        and production-grade REST API architectures. Proven ability to bridge theoretical cryptography
-        with scalable, secure, real-world implementations.
+        and production-grade REST API architectures bridging theory with real-world deployment.
     </div>
 </section>
 
 <section>
     <div class="section-title">Research & Publications</div>
-
     <div class="card">
-        <strong>Hybrid Scheme for Enhancing Entropy in Secure Communication of Resource-Constrained UAVs</strong><br>
-        • IEEE GCON 2025 – NERIST, Arunachal Pradesh<br>
-        • Extended version accepted for SCOPUS-indexed edited volume (Taylor & Francis, CRC Press), 2026<br><br>
-        Designed ECC + ChaCha20-Poly1305 based hybrid encryption achieving near-ideal 8 bits/byte entropy.
-        Validated using NIST statistical test suites and Shannon entropy analysis.
+        Hybrid Scheme for Enhancing Entropy in Secure Communication of Resource-Constrained UAVs.<br>
+        • IEEE GCON 2025 – NERIST, India<br>
+        • Extended version accepted for SCOPUS-indexed edited volume (Taylor & Francis, CRC Press), 2026.
     </div>
-
-</section>
-
-<section>
-    <div class="section-title">Professional Experience</div>
-
-    <div class="card">
-        <strong>Software Developer Intern – VML (2025–Present)</strong><br>
-        Built AI-powered Talent Intelligence system using FastAPI, vector databases (ChromaDB/FAISS),
-        and LLM integration with RBAC-secured APIs.
-    </div>
-
-    <div class="card">
-        <strong>Assistant System Engineer – TCS (2020–2023)</strong><br>
-        Developed secure backend systems for government financial applications handling sensitive
-        bank transactions with 99.9% uptime. Optimized SQL performance by 40%.
-    </div>
-
-</section>
-
-<section>
-    <div class="section-title">Key Projects</div>
-
-    <div class="card">
-        <strong>Hybrid Encryption Protocol for UAVs</strong><br>
-        Implemented full 3-phase secure communication protocol using ECC scalar multiplication,
-        ChaCha20-Poly1305, socket programming, and benchmarking suite against AES-CTR,
-        MICKEY, Trivium, and Rabbit.
-    </div>
-
-    <div class="card">
-        <strong>TalentIQ – AI Hiring Platform</strong><br>
-        Node.js & FastAPI REST APIs with JWT authentication, RAG pipelines,
-        AWS deployment, and semantic search via vector databases.
-    </div>
-
 </section>
 
 <section>
     <div class="section-title">Technical Expertise</div>
-
     <div class="grid">
 
         <div class="card">
             <strong>Cryptography</strong><br>
-            ECC, ECDLP, ChaCha20-Poly1305, Entropy Analysis, Secure Protocol Design
+            ECC, ECDLP, ChaCha20-Poly1305, Entropy Analysis
         </div>
 
         <div class="card">
-            <strong>Backend Engineering</strong><br>
-            FastAPI, Express.js, REST APIs, RBAC, JWT, MVC Architecture
+            <strong>Backend</strong><br>
+            FastAPI, Express.js, REST APIs, JWT, RBAC
         </div>
 
         <div class="card">
-            <strong>Cloud & DevOps</strong><br>
-            AWS (EC2, RDS, Lambda, S3, CloudWatch), Docker
+            <strong>Cloud</strong><br>
+            AWS (EC2, RDS, Lambda, S3), Docker
         </div>
 
         <div class="card">
-            <strong>AI & Data</strong><br>
-            LangChain, RAG, Vector DBs, Semantic Search
+            <strong>AI Systems</strong><br>
+            LangChain, RAG Pipelines, Vector Databases
         </div>
 
-    </div>
-</section>
-
-<section>
-    <div class="section-title">Research Interests</div>
-    <div class="card">
-        Lightweight Cryptography • Post-Quantum Cryptography • Zero-Knowledge Proofs •
-        Homomorphic Encryption • Cryptographic Software Engineering
     </div>
 </section>
 
 </div>
 
 <div class="footer">
-    © 2026 Rishyendra Kankatala | Built with GitHub Pages
+    © 2026 Rishyendra Kankatala
 </div>
 
 </body>
