@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishyendra Kankatala | Software Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --primary: #0f172a;
+    --accent: #2563eb;
+    --light: #f8fafc;
+    --text: #1e293b;
+    --muted: #64748b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: var(--muted);
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+section {
+    margin-top: 60px;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.badge {
+    display: inline-block;
+    background: #e0ecff;
+    color: var(--accent);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Rishyendra Kankatala</h1>
+    <p>Software Engineer | Applied Cryptography | Secure Backend Systems</p>
+    <nav>
+        <a href="mailto:rishyendrakankatala@gmail.com">Email</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<section>
+    <div class="section-title">About</div>
+    <div class="card">
+        Software Engineer with M.Tech from NIT Calicut and 4+ years of experience in secure system design and backend development.
+        Specialized in applied cryptography, elliptic curve cryptography, entropy analysis, and high-performance RESTful APIs.
+        Research on hybrid encryption for resource-constrained UAVs accepted at IEEE GCON 2025 and as a SCOPUS-indexed book chapter (Taylor & Francis, CRC Press).
+    </div>
+</section>
+
+<section>
+    <div class="section-title">Research & Publications</div>
+
+    <div class="card">
+        <strong>Hybrid Scheme for Enhancing Entropy in Secure Communication of Resource-Constrained UAVs</strong><br>
+        IEEE GCON 2025 – NERIST, India
+        <div class="badge">Conference Presentation</div>
+    </div>
+
+    <div class="card">
+        Extended Version – SCOPUS Indexed Edited Volume (Taylor & Francis, CRC Press), 2026<br>
+        ICC-TSD 2026 – GNDEC Ludhiana, India
+        <div class="badge">Book Chapter</div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">Professional Experience</div>
+
+    <div class="card">
+        <strong>Software Developer Intern – VML</strong> (2025 – Present)<br>
+        Built AI-powered Talent Intelligence system using FastAPI, vector databases (ChromaDB/FAISS), and LLM integration.
+    </div>
+
+    <div class="card">
+        <strong>Assistant System Engineer – TCS</strong> (2020 – 2023)<br>
+        Developed secure backend systems for government financial applications handling sensitive transactions with 99.9% uptime.
+    </div>
+</section>
+
+<section>
+    <div class="section-title">Key Projects</div>
+
+    <div class="card">
+        <strong>Hybrid Encryption Protocol for UAVs</strong><br>
+        Designed ECC + ChaCha20-Poly1305 protocol achieving near-ideal entropy (8 bits/byte) and validated using NIST statistical suites.
+    </div>
+
+    <div class="card">
+        <strong>TalentIQ – AI Hiring Platform</strong><br>
+        Built Node.js REST APIs with JWT authentication, RAG pipelines, and AWS deployment.
+    </div>
+
+</section>
+
+<section>
+    <div class="section-title">Technical Skills</div>
+
+    <div class="skills-grid">
+
+        <div class="card">
+            <strong>Languages</strong><br>
+            C, C++, Python, JavaScript, SQL
+        </div>
+
+        <div class="card">
+            <strong>Cryptography</strong><br>
+            ECC, ECDLP, ChaCha20-Poly1305, Entropy Analysis, Secure Protocol Design
+        </div>
+
+        <div class="card">
+            <strong>Backend & Cloud</strong><br>
+            FastAPI, Express.js, MongoDB, AWS (EC2, RDS, S3, Lambda), Docker
+        </div>
+
+        <div class="card">
+            <strong>AI & Security</strong><br>
+            LangChain, RAG Pipelines, QRadar SIEM, Microsoft Sentinel
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+<div class="footer">
+    © 2026 Rishyendra Kankatala | Designed with GitHub Pages
+</div>
+
+</body>
+</html>
