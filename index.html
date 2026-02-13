@@ -3,12 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rishyendra Kankatala | Applied Cryptography Engineer</title>
-
+<title>Rishyendra Kankatala | Cryptography Researcher & Software Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <style>
-
 :root {
     --primary: #0f172a;
     --accent: #2563eb;
@@ -16,25 +13,21 @@
     --card: #ffffff;
     --text: #1e293b;
     --muted: #64748b;
+    --success: #10b981;
 }
-
 * { margin:0; padding:0; box-sizing:border-box; }
-
 body {
     font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
 }
-
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
 }
-
 /* HERO SECTION */
-
 .hero {
     display: flex;
     align-items: center;
@@ -43,7 +36,6 @@ body {
     padding: 80px 20px 40px 20px;
     flex-wrap: wrap;
 }
-
 .hero img {
     width: 220px;
     height: 220px;
@@ -52,52 +44,53 @@ body {
     border: 4px solid var(--accent);
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-
 .hero-text {
     max-width: 600px;
 }
-
 .hero-text h1 {
     font-size: 2.6rem;
     font-weight: 700;
     color: var(--primary);
 }
-
-.hero-text p {
+.hero-text .tagline {
     margin-top: 10px;
     color: var(--muted);
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    font-weight: 400;
 }
-
 .badges {
     margin-top: 15px;
 }
-
 .badge {
     display: inline-block;
     background: #e0ecff;
     color: var(--accent);
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     margin: 5px 5px 0 0;
+    font-weight: 500;
 }
-
+.badge.highlight {
+    background: var(--accent);
+    color: white;
+}
 nav {
     margin-top: 20px;
 }
-
 nav a {
     text-decoration: none;
     margin-right: 20px;
     color: var(--accent);
     font-weight: 500;
+    transition: color 0.3s;
 }
-
+nav a:hover {
+    color: var(--primary);
+}
 section {
     margin-top: 60px;
 }
-
 .section-title {
     font-size: 1.6rem;
     margin-bottom: 20px;
@@ -105,21 +98,135 @@ section {
     border-left: 4px solid var(--accent);
     padding-left: 10px;
 }
-
 .card {
     background: var(--card);
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-
+.publication-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+.publication-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.publication-title {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+.publication-venue {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+.publication-venue strong {
+    color: var(--accent);
+}
+.status-badge {
+    display: inline-block;
+    background: #dcfce7;
+    color: var(--success);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+.downloads {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+.download-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 8px 8px 8px 0;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+.download-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+.download-btn.secondary {
+    background: #64748b;
+}
+.download-btn.secondary:hover {
+    background: #475569;
+}
+.skill-category {
+    margin-bottom: 10px;
+}
+.skill-category strong {
+    color: var(--primary);
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+.experience-item {
+    margin-bottom: 25px;
+}
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.experience-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+.experience-date {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.experience-company {
+    color: var(--accent);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+.experience-highlights {
+    list-style: none;
+    padding-left: 0;
+}
+.experience-highlights li {
+    padding-left: 20px;
+    margin-bottom: 6px;
+    position: relative;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+.experience-highlights li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
 .footer {
     text-align: center;
     margin-top: 80px;
@@ -127,40 +234,55 @@ section {
     font-size: 0.9rem;
     color: var(--muted);
 }
-
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+}
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
 @media (max-width: 768px) {
     .hero {
         text-align: center;
     }
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
-
 </style>
 </head>
-
 <body>
-
 <div class="hero">
-
     <img src="profile.jpg" alt="Rishyendra Kankatala">
-
     <div class="hero-text">
         <h1>Rishyendra Kankatala</h1>
-        <p>Backend Developer • Applied Cryptography </p>
-
+        <p class="tagline">Applied Cryptography • Secure Protocol Design • Backend Systems Engineering</p>
         <div class="badges">
-            <span class="badge">VML Enterprise Solutions</span>
-            <span class="badge">Ex-TCS</span>
-            <span class="badge">M.Tech'25 NIT Calicut</span>
-            <span class="badge">GATE 2023 - AIR 3067 (~96%)</span>
+            <span class="badge highlight">M.Tech – NIT Calicut</span>
+            <span class="badge">Backend Dev</span>
+            <span class="badge">Applied Cryptography</span>
+            <span class="badge">GATE AIR 3067 (~96%)</span>
         </div>
-
         <nav>
             <a href="mailto:rishyendrakankatala@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/rishyendra-kankatala-0b0913162/">LinkedIn</a>
-            <a href="https://github.com/rishyend/Message-Encryption-Schemes-for-Resource-Constrained-Devices-With-ECDLP-Property">GitHub</a>
+            <a href="https://github.com/rishyend">GitHub</a>
+            <a href="https://scholar.google.com">Scholar</a>
         </nav>
     </div>
-
 </div>
 
 <div class="container">
@@ -168,53 +290,170 @@ section {
 <section>
     <div class="section-title">Professional Summary</div>
     <div class="card">
-        Software Engineer with 4+ years of experience in applied cryptography and secure backend systems.
-        Specialized in Elliptic Curve Cryptography (ECC), entropy analysis, lightweight encryption protocols,
-        and production-grade REST API architectures bridging theory with real-world deployment.
+        Cryptography researcher with M.Tech from National Institute of Technology Calicut and 4+ years of professional software development experience. Specialized in applied cryptography, secure protocol design, and cryptographic software implementation, with extensive expertise in Python-based backend development including RESTful API design, database architecture, and cloud deployment. Research on hybrid encryption for resource-constrained devices accepted for publication as a SCOPUS-indexed book chapter (Taylor & Francis) and at IEEE GCON 2025. Strong foundation in Python programming for both cryptographic implementations and production backend systems, with experience in algorithm implementation, software engineering practices including API design, testing, and performance optimization. Proven track record of bridging theoretical cryptography with practical, production-ready implementations across secure systems and scalable backend applications.
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Publications</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+        </div>
     </div>
 </section>
 
 <section>
     <div class="section-title">Research & Publications</div>
     <div class="card">
-        Hybrid Scheme for Enhancing Entropy in Secure Communication of Resource-Constrained UAVs.<br>
-        • IEEE GCON 2025 – NERIST, India<br>
-        • Extended version accepted for SCOPUS-indexed edited volume (Taylor & Francis, CRC Press), 2026.
+        <div class="publication-item">
+            <div class="publication-title">
+                Hybrid Scheme for Enhancing Entropy in Secure Communication of Resource-Constrained UAVs
+                <span class="status-badge">ACCEPTED</span>
+            </div>
+            <div class="publication-venue">
+                <strong>Book Chapter (SCOPUS-indexed):</strong> Accepted for publication in edited volume by <strong>Taylor & Francis (CRC Press)</strong>, 2026<br>
+                • Will be presented at International Conference on Intelligent Computational and Communication Technologies for Sustainable Development (ICC-TSD), GNDEC Ludhiana, India, April 1-3, 2026
+            </div>
+        </div>
+        
+        <div class="publication-item">
+            <div class="publication-title">
+                Hybrid Scheme for Enhancing Entropy in Secure Communication of Resource-Constrained UAVs
+                <span class="status-badge">ACCEPTED</span>
+            </div>
+            <div class="publication-venue">
+                <strong>Conference Proceedings:</strong> Accepted for presentation at <strong>IEEE GCON 2025</strong> (Global Conference on Emerging Technologies)<br>
+                • NERIST, Arunachal Pradesh, India | June 18-20, 2025<br>
+                • To be published in IEEE Xplore Digital Library
+            </div>
+        </div>
+        
+        <div class="downloads">
+            <strong style="display: block; margin-bottom: 12px; color: var(--primary);">📥 Downloadable Resources:</strong>
+            <a href="Rishyendra_Kankatala_CV_IMDEA.pdf" class="download-btn" download>Download Full CV (PDF)</a>
+            <a href="thesis_abstract.pdf" class="download-btn secondary" download>Thesis Abstract</a>
+            <a href="https://github.com/rishyend/Message-Encryption-Schemes-for-Resource-Constrained-Devices-With-ECDLP-Property" class="download-btn secondary">View Implementation (GitHub)</a>
+        </div>
     </div>
 </section>
 
 <section>
     <div class="section-title">Technical Expertise</div>
     <div class="grid">
-
         <div class="card">
-            <strong>Cryptography</strong><br>
-            ECC, ECDLP, ChaCha20-Poly1305, Entropy Analysis
+            <div class="skill-category">
+                <strong>Cryptography</strong>
+                ECC, ECDLP, ChaCha20-Poly1305, Entropy Analysis, Stream Ciphers, SECP224k1, NIST Test Suites
+            </div>
         </div>
-
         <div class="card">
-            <strong>Backend</strong><br>
-            FastAPI, Express.js, REST APIs, JWT, RBAC
+            <div class="skill-category">
+                <strong>Backend Development</strong>
+                FastAPI, Express.js, Node.js, REST APIs, JWT, RBAC, MVC Architecture, MongoDB, MS SQL Server
+            </div>
         </div>
-
         <div class="card">
-            <strong>Cloud</strong><br>
-            AWS (EC2, RDS, Lambda, S3), Docker
+            <div class="skill-category">
+                <strong>Cloud & DevOps</strong>
+                AWS (EC2, RDS, Lambda, S3, CloudFormation), GCP, Docker, Infrastructure as Code
+            </div>
         </div>
-
         <div class="card">
-            <strong>AI Systems</strong><br>
-            LangChain, RAG Pipelines, Vector Databases
+            <div class="skill-category">
+                <strong>AI/ML Systems</strong>
+                LangChain, RAG Pipelines, Vector Databases (ChromaDB, FAISS), Sentence Transformers, LLaMA
+            </div>
         </div>
+    </div>
+</section>
 
+<section>
+    <div class="section-title">Professional Experience</div>
+    <div class="card">
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Software Developer Intern</div>
+                <div class="experience-date">April 2025 - Present</div>
+            </div>
+            <div class="experience-company">VML (Wunderman Thompson) | Noida, India</div>
+            <ul class="experience-highlights">
+                <li>Built AI-powered Talent Intelligence system using FastAPI, MongoDB, and semantic search (ChromaDB, FAISS)</li>
+                <li>Implemented secure API authentication, JWT, and RBAC for production-grade architecture</li>
+                <li>Developed automated video processing pipelines with cloud integration (GCP)</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Assistant System Engineer - Backend Developer</div>
+                <div class="experience-date">November 2020 - October 2023</div>
+            </div>
+            <div class="experience-company">Tata Consultancy Services (TCS) | Hyderabad, India</div>
+            <ul class="experience-highlights">
+                <li>Developed secure backend systems for government financial application handling sensitive data</li>
+                <li>Optimized SQL queries achieving 40% performance improvement using CTEs and window functions</li>
+                <li>Implemented secure stored procedures and APIs following security best practices</li>
+                <li>Deployed infrastructure using AWS CloudFormation with 99.9% uptime</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">Education & Achievements</div>
+    <div class="card">
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">M.Tech in Computer Science and Engineering</div>
+                <div class="experience-date">2023 - 2025 | CGPA: 8.79/10.0</div>
+            </div>
+            <div class="experience-company">National Institute of Technology Calicut (NIT Calicut)</div>
+            <ul class="experience-highlights">
+                <li>Thesis: Hybrid encryption protocol combining ECDLP with ChaCha20-Poly1305</li>
+                <li>Implemented in C and Python with comprehensive security validation</li>
+                <li>Teaching Assistant - Programming Lab (2025)</li>
+            </ul>
+        </div>
+        
+        <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+            <strong style="color: var(--primary); display: block; margin-bottom: 10px;">Notable Achievements:</strong>
+            <ul class="experience-highlights">
+                <li>SCOPUS-indexed book chapter accepted (Taylor & Francis, 2026)</li>
+                <li>GATE 2023: AIR 3067 (Top 1.5% nationally in Computer Science & IT)</li>
+                <li>LetsDefend Certified SOC Analyst</li>
+                <li>IBM QRadar SIEM Foundation Certified</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">Research Interests</div>
+    <div class="card">
+        <div class="grid">
+            <div>• Applied Cryptography</div>
+            <div>• Lightweight Encryption</div>
+            <div>• Elliptic Curve Cryptography</div>
+            <div>• Post-Quantum Cryptography</div>
+            <div>• Homomorphic Encryption</div>
+            <div>• Zero-Knowledge Proofs</div>
+            <div>• Secure Protocol Design</div>
+            <div>• Cryptographic Software Engineering</div>
+        </div>
     </div>
 </section>
 
 </div>
 
 <div class="footer">
-    © 2026 Rishyendra Kankatala
+    © 2026 Rishyendra Kankatala | Last updated: February 2026
 </div>
-
 </body>
 </html>
